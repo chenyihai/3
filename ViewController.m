@@ -22,6 +22,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     //第四次测试一下有没有改变
+     //第五次测试一下有没有改变
     
 }
 
@@ -31,12 +32,14 @@
 {
     //测试一下有没有改变
     //第二次测试一下有没有改变
+     //第六次测试一下有没有改变
     NSLog(@"-----%@",returnData);
 }
 
 - (void)requestdidFailWithError:(NSError *)error
 {
     //第三次测试一下有没有改变
+     //第七次测试一下有没有改变
 }
 #pragma mark - target
 - (void)finishedRequest:(id)data didFaild:(NSError*)error
