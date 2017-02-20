@@ -104,6 +104,8 @@
                 [weakSelf performSelector:@selector(finishedRequest: didFaild:) withObject:responseObject withObject:nil];
                 [weakSelf removewItem];
             } failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
+            
+              
                 [MBProgressHUD hideAllHUDsForView:nil animated:YES];
                 DTLog(@"---error==%@\n",error.localizedDescription);
                 if (failureBlock) {

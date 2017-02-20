@@ -166,6 +166,9 @@ static const CGFloat kDetailsLabelFontSize = 12.f;
 }
 
 + (NSUInteger)hideAllHUDsForView:(UIView *)view animated:(BOOL)animated {
+    if (view==nil) {
+        view = (UIView*)[[[UIApplication sharedApplication]delegate]window];
+    }
 	NSArray *huds = [MBProgressHUD allHUDsForView:view];
 	for (MBProgressHUD *hud in huds) {
 		hud.removeFromSuperViewOnHide = YES;

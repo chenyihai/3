@@ -11,12 +11,12 @@
 ///**
 // *  正式环境
 // */
-//#define API_HOST @"http://123.59.61.167/api/JNWTV"
+#define API_HOST @"http://123.59.61.167/api/JNWTV"
 
 ///**
 // *   测试环境
 // */
-#define API_HOST @"http://120.132.61.55/api/JNWTV"
+//#define API_HOST @"http://120.132.61.55/api/JNWTV"
 
 //      接口路径全拼
 #define PATH(_path)             [NSString stringWithFormat:_path, API_HOST]
